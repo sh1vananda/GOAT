@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "project": { "name": "GOAT-Mag" },
+  "api": { "projectId": "YOUR_ID", "dataset": "production" },
+  "plugins": ["@sanity/base", "@sanity/default-layout"],
+  "env": { "development": { "api": { "host": "http://localhost:3333" } } },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    }
+  ]
+}

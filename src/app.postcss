@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply overflow-x-hidden; /* Add this line */
+  }
+
+  body {
+    @apply bg-black text-white overflow-y-auto m-0;
+    font-family: "Work Sans", sans-serif;
+  }
+}
